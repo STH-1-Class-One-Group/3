@@ -87,7 +87,7 @@ body {
 
 .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
   border-bottom: 4px solid black;
   padding-bottom: 0.5rem;
