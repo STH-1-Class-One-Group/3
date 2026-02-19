@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #969696;
+  background-color: #cdcccc;
   color: #0f172a;
   transition-property: background-color, color;
   transition-duration: 200ms;
@@ -194,7 +194,7 @@ body {
 }
 
 .article-preview {
-  background-color: #f8fafc;
+  background-color: #cdcccc;
   padding: 1rem;
   border: 1px solid #e2e8f0;
 }
@@ -298,12 +298,12 @@ body {
 }
 
 .main-story-image-container {
-    background-color: #f1f5f9;
+    background-color: #cdcccc;
     width: 100%;
     aspect-ratio: 16 / 10;
     overflow: hidden;
     position: relative;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #cdcccc;
 }
 
 .dark .main-story-image-container {
@@ -339,7 +339,7 @@ body {
 }
 
 .main-story-article {
-    background-color: #f8fafc;
+    background-color: #cdcccc;
     padding: 1.5rem;
     border: 1px solid #e2e8f0;
     flex-grow: 1;
