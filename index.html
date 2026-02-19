@@ -1,6 +1,164 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Hello! world!</h1>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>설날 먹기리</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400&amp;family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#111111",
+                            "background-light": "#ffffff",
+                            "background-dark": "#0f172a",
+                        },
+                        fontFamily: {
+                            display: ["'Playfair Display'", "serif"],
+                            serif: ["'PT Serif'", "serif"],
+                            sans: ["'Roboto'", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0px",
+                        },
+                    },
+                },
+            };
+    </script>
+    <style type="text/tailwindcss">
+            .newspaper-divider {
+                border-top: 3px solid #111;
+                border-bottom: 1px solid #111;
+                height: 6px;
+                margin: 1rem 0;
+            }
+            .dark .newspaper-divider {
+                border-top-color: #f8fafc;
+                border-bottom-color: #f8fafc;
+            }
+            body {
+                font-family: 'PT Serif', serif;
+            }
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }.vertical-rule {
+                width: 1px;
+                height: 100%;
+                background-color: #cbd5e1;}
+            .dark .vertical-rule {
+                background-color: #334155;}
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-200">
+    
+    <div class="fixed top-4 right-4 z-50">
+        <button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm transition-all" onclick="document.documentElement.classList.toggle('dark')">
+        <span class="material-symbols-outlined text-xl block">contrast</span>
+        </button>
+    </div>
+
+    <header class="max-w-7xl mx-auto px-4 pt-8">
+        <div class="flex justify-between items-end border-b-4 border-black dark:border-white pb-2 mb-1">
+            <div class="text-sm font-sans italic">
+                            Monday, November 13, 2023<br/>
+                            Vol. CLXXII... No. 59,812
+                        </div>
+            <h1 class="font-display text-7xl md:text-8xl lg:text-9xl text-center leading-none tracking-tighter">
+                            The Daily Gazette
+                        </h1>
+            <div class="text-sm font-sans text-right">
+                            $3.50<br/>
+                            Clear, 12°C
+                        </div>
+        </div>
+        <div class="newspaper-divider"></div>
+    </header>
+    
+    <main class="max-w-7xl mx-auto px-4 mb-12">
+        <div class="flex flex-col lg:flex-row gap-0">
+            <div class="w-full lg:w-7/12 lg:pr-8 py-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-8">
+                        <div class="bg-slate-100 dark:bg-slate-800 aspect-square overflow-hidden group border border-slate-200 dark:border-slate-800">
+                            <img alt="Urban architecture and governance" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4MhCKHOwkqgk51CO4xXQq8DeDLDhhdI4bxQiXxR0n1NWKXfV1r5mBNQ2jTsSh8i0f706rsE08-ltIpx8p2qY6ws7wQzA2XJQXnpgoGq2_B0N1ZmPceDt0MMinGhh93kpw2NLq91YmSqXsX3I4Ke6NXS5TLBpH_4PevCe-h1UK2833hBbns47Qnsw9bye3-eAKoUF5VhqCZ0XrRVyOADX5G-BoJ3jovHinyMAzVa86V79QSlXO40GxdEhnmO1IpJRc9O7xVjHAfw"/>
+                            <p class="p-2 text-[10px] italic font-sans dark:text-slate-400 bg-white dark:bg-slate-900">FILE PHOTO: CITY HALL PLAZA</p>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-900/50 p-4 border border-slate-200 dark:border-slate-800">
+                            <h3 class="font-display text-xl mb-2 hover:underline cursor-pointer leading-tight">Global Trade Agreements Face New Hurdles Amid Market Volatility</h3>
+                            <p class="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                                                            Economic leaders gathered this morning to discuss the shifting landscape of international commerce. As supply chains adapt to new regulations, analysts predict a period of moderate instability before a robust recovery. The proposed framework aims to reduce tariffs on high-tech exports...
+                                                        </p>
+                            <a class="text-[11px] font-sans font-bold uppercase mt-3 inline-block hover:text-red-600 tracking-wider" href="#">Read More →</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col space-y-8">
+                        <div class="bg-slate-50 dark:bg-slate-900/50 p-4 border border-slate-200 dark:border-slate-800">
+                            <h3 class="font-display text-xl mb-2 hover:underline cursor-pointer leading-tight">The Silent Shift in Urban Infrastructure Development</h3>
+                            <p class="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                                                            Cities are quietly transforming their transit networks to prioritize pedestrian traffic and green spaces. This fundamental change in planning logic is beginning to yield significant environmental benefits in major metropolitan areas across the continent.
+                                                        </p>
+                            <div class="mt-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+                                <span span class="text-[10px] font-sans font-bold uppercase text-slate-500">Editorial Opinion</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-100 dark:bg-slate-800 aspect-square overflow-hidden group border border-slate-200 dark:border-slate-800">
+                        <img alt="New technology laboratory" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkb_8y_ExIuASYOurBdcEpHbx3RdhSA-XfKCf7IJf_hbdtzLlWDbT11vN73fR6ukBZ5sBC-kUOS6-K01YW3XcSlXZXQNvs2bK86Kp8Gp5cnXv4bh92KhR1VSPod9S2AObzmJxnvGWdba-BHFfP4SLCJ4NOv4Z3dFonPth5IdJ_S4WUkaEybkU3yMqmxHCQ7uyqLG9kCdhsde8VwUkkhZ-uOCnkeCfzXlRkbLDy8VJvq-ZvNX_pI721K1Fpqycz_AG-2liEZ9c5MA"/>
+                        <p class="p-2 text-[10px] italic font-sans dark:text-slate-400 bg-white dark:bg-slate-900">INNOVATION: RESEARCH LABS AT DAWN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block w-px py-4">
+                <div class="vertical-rule"></div>
+            </div>
+
+            <div class="w-full lg:w-5/12 lg:pl-4 py-4 flex flex-col space-y-8">
+                <div class="bg-slate-100 dark:bg-slate-800 w-full aspect-[16/10] overflow-hidden group relative border border-slate-200 dark:border-slate-800">
+                    <img alt="Global summit meeting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlfYlf9PKeTl3iqbPirDB3v5ip59IVMvXC75YhFcmKuuViOLiXT73SWtBuaXyad0gILMb7Hw82KQJPv87iu4NlaFuQ_hDYshBsoeHH0ENT-yjgyZQilwrSNouT_JSvUPG_Ub6EKzCEVK5wWmFDLPpS8QnWP8BwZFKTpF-W8XWfXkzhola-chHGUvvYoKewDozIljSjLE1JaCOc_Q1kjofJIv4UulrTAQKC2LM6rVVGUAcDyA93COidGdlrpvS4deBbqdSqWZyoUw"/>
+                    
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <p class="text-white text-xs font-sans font-bold">MAIN STORY: THE SUMMIT ON ARTIFICIAL INTELLIGENCE ETHICS BEGINS IN GENEVA</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 dark:bg-slate-900/50 p-6 border border-slate-200 dark:border-slate-800 flex-grow">
+                    <h2 class="font-display text-4xl mb-4 leading-tight hover:underline cursor-pointer">
+                                            Revolutionizing Healthcare: How Data is Shaping the Future of Personalized Medicine
+                                        </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <p class="text-base leading-relaxed text-slate-800 dark:text-slate-200 first-letter:text-5xl first-letter:font-display first-letter:float-left first-letter:mr-3 first-letter:leading-none">
+                                                    The intersection of biotechnology and computer science has reached a critical tipping point. Today, researchers announced a breakthrough in genomic sequencing that promises to make custom-tailored medical treatments accessible to the general public within the next decade.
+                                                </p>
+                        <div class="space-y-4">
+                            <p class="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                                                            Dr. Elena Vance, lead researcher at the Institute, stated that the speed of data processing has increased tenfold. "We are no longer looking for needles in haystacks; we are mapping the entire field," she remarked during the press conference.
+                                                        </p>
+                            <ul class="text-xs font-sans space-y-2 border-t border-slate-200 dark:border-slate-800 pt-4">
+                                <li class="flex items-start">
+                                    <span class="material-symbols-outlined text-red-600 text-sm mr-2 leading-none">arrow_forward</span>
+                                    <span>Impact on health insurance premiums</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="material-symbols-outlined text-red-600 text-sm mr-2 leading-none">arrow_forward</span>
+                                    <span>The ethical debate over data privacy</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     </body>
 </html>
